@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hire Harsh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      background-color: #111;
+      padding: 16px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+    }
+
+    .logo {
+      color: #ff0000;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    #contact {
+      background-color: #111;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    #contact:hover {
+      transform: scale(1.02);
+    }
+
+    h1, h2 {
+      color: #ff0000;
+      text-align: center;
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ff0000;
+      background-color: #000;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 10px #ff0000;
+    }
+
+    .hire-me {
+      margin-top: 25px;
+      padding: 14px 30px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(255, 0, 0, 0.4);
+      transition: all 0.4s ease;
+    }
+
+    .hire-me:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(255, 0, 0, 0.5);
+    }
+
+    @media (max-width: 640px) {
+      #contact {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">HARSH</div>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h1>Let's Connect</h1>
+    <p><strong>📞 Mobile:</strong> +91 9876543210</p>
+    <p><strong>📧 Email:</strong> harsh@example.com</p>
+
+    <h2>Hiring Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Full Name" required />
+
+      <label for="company">Company Name:</label>
+      <input type="text" id="company" placeholder="Company Name" required />
+
+      <label for="post">Post / Title:</label>
+      <input type="text" id="post" placeholder="e.g., Frontend Developer" required />
+
+      <label for="role">Job Role:</label>
+      <input type="text" id="role" placeholder="Role Description" required />
+
+      <label for="salary">Offered Salary:</label>
+      <input type="text" id="salary" placeholder="e.g., ₹60,000/month" required />
+
+      <button class="hire-me" type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
