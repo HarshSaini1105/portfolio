@@ -131,24 +131,27 @@
     <p><strong>📧 Email:</strong> harsh@example.com</p>
 
     <h2>Hiring Form</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Your Full Name" required />
+ <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="cda9c87c-2c42-493f-bfd1-a5c94945ab5b">
 
-      <label for="company">Company Name:</label>
-      <input type="text" id="company" placeholder="Company Name" required />
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Full Name" required />
 
-      <label for="post">Post / Title:</label>
-      <input type="text" id="post" placeholder="e.g., Frontend Developer" required />
+  <label for="company">Company Name:</label>
+  <input type="text" id="company" name="company" placeholder="Company Name" required />
 
-      <label for="role">Job Role:</label>
-      <input type="text" id="role" placeholder="Role Description" required />
+  <label for="post">Post / Title:</label>
+  <input type="text" id="post" name="post" placeholder="e.g., Frontend Developer" required />
 
-      <label for="salary">Offered Salary:</label>
-      <input type="text" id="salary" placeholder="e.g., ₹60,000/month" required />
+  <label for="role">Job Role:</label>
+  <input type="text" id="role" name="role" placeholder="Role Description" required />
 
-      <button class="hire-me" type="submit">Submit</button>
-    </form>
+  <label for="salary">Offered Salary:</label>
+  <input type="text" id="salary" name="salary" placeholder="e.g., ₹60,000/month" required />
+
+  <button class="hire-me" type="submit">Submit</button>
+</form>
+
   </section>
 </body>
 </html>
